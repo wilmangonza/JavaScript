@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Input</title>
+
+<script language="JavaScript" type="text/javascript">
+<!--
+
+  function checkText(form) {
+	var MyValueLength = form.myText.value.length;
+    var myValue = form.myText.value;
+	if (MyValueLength < 1){
+    alert("Please enter a value");
+	}else{
+	alert(myValue);
+	form.myText.focus();
+	}
+return false;  
+}
+
+
+function isChecked(form) {
+   
+  
+    var booleanChecked = form.myCheckbox.checked;
+  if(booleanChecked) alert("Check box is selected.");
+  else alert ("Check box is not selected.");
+}
+
+ function isChecked(form) {
+    var len = form.myRadio.length;
+  
+for(var i = 0; i < len; i++) {
+    if(form.myRadio[i].checked){
+      alert("Value: " + form.myRadio[i].value);
+	  var checked = 1;}
+  }
+  if(checked == 0){alert("No radio button selected")}
+
+ 
+  
+}
+
+//-->
+</script>
+</head>
+<body>
+
+<h3>CPU WWW STORES</h3>
+<hr />
+<form name="myForm" id="myForm">
+Name of the Customer: 
+<input type="text" name="myText" />
+<p>
+<input type="button" value="Check Input" onclick="checkText(this.form);" /> <input type="reset" />
+</p>
+
+<hr />
+<form name="myForm" id="myForm">
+Select check box if you need a new processor: 
+<input type="checkbox" name="myCheckbox" />
+<p>
+<input type="button" value="Check Input" onclick="isChecked(this.form);" /> 
+<input type="reset" />
+</p>
+
+<hr />
+<form name="myForm" id="myForm">
+Select the family of Processors that you would like to buy<br />
+AMD FX<input type="radio" name="myRadio" value="First radio button" />
+AMD A Fusion<input type="radio" name="myRadio" value="Second radio button" />
+AMD Phenom II<input type="radio" name="myRadio" value="Third radio button" />
+AMD Phenom <input type="radio" name="myRadio" value="Fourth radio button" />
+AMD Athlon II <input type="radio" name="myRadio" value="Fifth radio button" />
+AMD Athlon <input type="radio" name="myRadio" value="Sixth radio button" />
+AMD Sempron <input type="radio" name="myRadio" value="Seventh radio button" />
+intel Atom <input type="radio" name="myRadio" value="eigth radio button" />
+intel Celeron <input type="radio" name="myRadio" value="ninth radio button" />
+intel Pentium <input type="radio" name="myRadio" value="tenth radio button" />
+intel core 2 <input type="radio" name="myRadio" value="eleventh radio button" />
+intel core 2 duo <input type="radio" name="myRadio" value="twelfth radio button" />
+intel core 2 Quad <input type="radio" name="myRadio" value="thirteenth radio button" />
+intel core i3 <input type="radio" name="myRadio" value="fourteenth radio button" />
+intel core i5 <input type="radio" name="myRadio" value="fifteenth radio button" />
+intel core i7 <input type="radio" name="myRadio" value="sixteenth radio button" />
+<p>
+<input type="button" value="Check Input" onclick="isChecked(this.form);" /> 
+<input type="reset" />
+</p>
+
+</form>
+</body>
+</html>
